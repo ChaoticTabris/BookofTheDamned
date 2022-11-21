@@ -1,0 +1,11 @@
+{
+  "Id": "BookoftheDamned",
+  "DisplayName": "Book of the Damned",
+  "Author": "ChaoticTabris",
+  "Version": "0.1",
+  "ManagerVersion": "0.21.3",
+  "Requirements": ["ModMenu-1.3.0"],
+  "AssemblyName": "BookoftheDamned.dll",
+  "EntryMethod": "BookoftheDamned.Main.Load"
+}
+

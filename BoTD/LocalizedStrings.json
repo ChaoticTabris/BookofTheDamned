@@ -1,0 +1,32 @@
+[
+  {
+    "Key": "BackgroundAnatomist.Name",
+    "ProcessTemplates": false,
+    "enGB": "Anatomist"
+  },
+
+  {
+    "Key": "BackgroundAnatomist.Description",
+    "enGB": "Anatomist adds Lore (nature) and Lore (religion) to the list of her class {g|Encyclopedia:Skills}skills{/g}. She also gets a +1 {g|Encyclopedia:Bonus}bonus{/g} on Critical Confirmation Rolls. \n If the character already has the class skill, {g|Encyclopedia:Weapon_Proficiency}weapon proficiency{/g} or armor proficiency granted by the selected background from her class during character creation, then the corresponding bonuses from background change to a +1 competence bonus in case of skills, a +1 enhancement bonus in case of weapon proficiency and a -1 Armor {g|Encyclopedia:Check}Check{/g} {g|Encyclopedia:Penalty}Penalty{/g} reduction in case of armor proficiency."
+  },
+
+  {
+    "Key": "GreaterMercy.Name",
+    "enGB": "Greater Mercy"
+  },
+
+  {
+    "Key": "GreaterMercy.Description",
+    "enGB": "When you use your lay on hands ability and the target of that ability does not have any conditions your mercies can remove, it instead heals an additional +1d6 points of damage."
+  },
+
+  {
+    "Key": "UltimateMercy.Name",
+    "enGB": "Ultimate Mercy"
+  },
+
+  {
+    "Key": "UltimateMercy.Description",
+    "enGB": "You can expend 10 uses of lay on hands to bring a single dead creature you touch back to life as a raise dead spell with a caster level equal to your paladin level. You must provide the material component for raise dead or choose to accept 1 temporary negative level; this level automatically goes away after 24 hours, never becomes a permanent negative level, and cannot be overcome in any way except by waiting for the duration to expire."
+  }
+]
