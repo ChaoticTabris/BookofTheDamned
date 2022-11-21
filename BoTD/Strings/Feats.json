@@ -1,0 +1,21 @@
+[
+{
+  "Key": "GreaterMercy.Name",
+  "enGB": "Greater Mercy"
+},
+
+  {
+    "Key": "GreaterMercy.Description",
+    "enGB": "When you use your lay on hands ability and the target of that ability does not have any conditions your mercies can remove, it instead heals an additional +1d6 points of damage."
+  },
+
+  {
+    "Key": "UltimateMercy.Name",
+    "enGB": "Ultimate Mercy"
+  },
+
+  {
+    "Key": "UltimateMercy.Description",
+    "enGB": "You can expend 10 uses of lay on hands to bring a single dead creature you touch back to life as a raise dead spell with a caster level equal to your paladin level. You must provide the material component for raise dead or choose to accept 1 temporary negative level; this level automatically goes away after 24 hours, never becomes a permanent negative level, and cannot be overcome in any way except by waiting for the duration to expire."
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "Key": "BOTD.Settings.Title",
+    "ProcessTemplates": false,
+    "enGB": "Book of the Damned"
+  },
+
+  {
+    "Key": "BOTD.Settings.Backgrounds.Title",
+    "ProcessTemplates": false,
+    "enGB": "Backgrounds"
+  },
+
+  {
+    "Key": "BOTD.Settings.Feats.Title",
+    "ProcessTemplates": false,
+    "enGB": "Feats"
+  },
+  {
+    "Key": "BOTD.Settings.EnableFeature",
+    "ProcessTemplates": false,
+    "enGB": "REQUIRES RESTART\n\nTurning this off prevents the feature from working: characters cannot select this feature and characters with it cannot use it. You can still load save games that reference it.",
+    "ruRU": "ТРЕБУЕТ РЕСТАРТ\n\nЕсли вы отключите эту настройку, черта перестанет работать: персонажи, у которых она уже есть, не смогут ею пользоваться. Но это не помешает загружать сохранения, в которых присутствует эта черта."
+  }
+]

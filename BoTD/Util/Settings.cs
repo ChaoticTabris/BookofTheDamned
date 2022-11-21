@@ -1,12 +1,6 @@
 ﻿using BlueprintCore.Utils;
-using Kingmaker.Blueprints;
 using Kingmaker.Localization;
 using ModMenu.Settings;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static UnityModManagerNet.UnityModManager.ModEntry;
 using Menu = ModMenu.ModMenu;
 
