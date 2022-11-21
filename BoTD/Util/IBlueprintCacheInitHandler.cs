@@ -4,7 +4,7 @@ using Kingmaker.PubSubSystem;
 
 /* Taken directly from TabletopTweaks-Core. Did not want to have a TTT-Core dependency.*/
 /* Credit goes to Vek17 */
-namespace BookoftheDamned.Utils
+namespace BookoftheDamned.Util
 {
     public interface IBlueprintCacheInitHandler : IGlobalSubscriber
     {

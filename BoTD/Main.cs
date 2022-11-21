@@ -4,7 +4,6 @@ using BlueprintCore.Utils;
 using BookoftheDamned.Backgrounds;
 using BookoftheDamned.Feats;
 using BookoftheDamned.Util;
-using BookoftheDamned.Utils;
 using HarmonyLib;
 using Kingmaker.PubSubSystem;
 using System;
@@ -85,8 +84,9 @@ namespace BookoftheDamned
 
                     // Fist strings
                     LocalizationTool.LoadEmbeddedLocalizationPacks(
-                        "BookoftheDamned.Strings.Backgrounds",
-                        "BookoftheDamned.Strings.Feats");
+                        "BookoftheDamned.Strings.Backgrounds.json",
+                        "BookoftheDamned.Strings.Feats.json",
+                        "BookoftheDamned.Strings.Settings.json");
 
                     // Then settings
                     Settings.Init();
