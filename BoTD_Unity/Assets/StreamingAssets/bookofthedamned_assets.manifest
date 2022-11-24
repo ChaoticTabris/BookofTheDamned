@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 3763539238
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e82af84fe3fa39fff4e1be3d6a9073c8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4df8c69f2c8a6ad9e3cbf82bb83e4dc3
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Icons/GreaterMercy.png
+- Assets/Icons/UltimateMercyAbility.png
+- Assets/Icons/UltimateMercy.png
+Dependencies: []

@@ -57,9 +57,6 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>$(WrathPath)\Wrath_Data\Managed\Newtonsoft.Json.dll</HintPath>
     </Reference>
-	<Reference Include="ModMenu">
-      <HintPath>D:\Steam\steamapps\common\Pathfinder Second Adventure\Mods\ModMenu\ModMenu.dll</HintPath>
-	</Reference>
     <Reference Include="Owlcat.Runtime.Core">
       <HintPath>$(WrathPath)\Wrath_Data\Managed\Owlcat.Runtime.Core.dll</HintPath>
     </Reference>

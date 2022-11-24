@@ -3,6 +3,7 @@ using BlueprintCore.Blueprints.Configurators.Root;
 using BlueprintCore.Utils;
 using BookoftheDamned.Backgrounds;
 using BookoftheDamned.Feats;
+using BookoftheDamned.Feats.UltimateMercyUses;
 using BookoftheDamned.Util;
 using HarmonyLib;
 using Kingmaker.PubSubSystem;
@@ -108,6 +109,8 @@ namespace BookoftheDamned
             {
                 Logger.Log("configuring feats.");
                 GreaterMercy.Configure();
+                UMMaterial.Configure();
+                UMNegLvl.Configure();
             }
             private static void ConfigureFeatsDelayed()
             {

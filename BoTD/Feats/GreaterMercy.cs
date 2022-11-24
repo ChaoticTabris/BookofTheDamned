@@ -1,21 +1,16 @@
-﻿using BlueprintCore.Blueprints.Configurators.Collections;
-using BlueprintCore.Blueprints.CustomConfigurators.Classes;
+﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
 using BlueprintCore.Blueprints.References;
 using BookoftheDamned.Util;
-using JetBrains.Annotations;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.EntitySystem.Entities;
 using Kingmaker.PubSubSystem;
 using Kingmaker.RuleSystem;
-using Kingmaker.RuleSystem.Rules;
 using Kingmaker.RuleSystem.Rules.Damage;
 using Kingmaker.UnitLogic;
+using Kingmaker.UnitLogic.Abilities;
 using Kingmaker.UnitLogic.Buffs;
-using Kingmaker.UnitLogic.Buffs.Blueprints;
-using Kingmaker.UnitLogic.Mechanics;
-using Kingmaker.UnitLogic.Mechanics.Actions;
 using Kingmaker.Utility;
 using System;
 using System.Collections.Generic;
@@ -35,23 +30,31 @@ namespace BookoftheDamned.Feats
         internal const string UltimateFeatDisplayName = "UltimateMercy.Name";
         private static readonly string UltimateFeatDescription = "UltimateMercy.Description";
 
-        internal const string AbilityName = "UltimateMercy.Ability";
+        internal const string UMAbilityName = "UMAbility";
+        internal const string UMAbilityDisplayName = "UMAbility.Name";
+        private static readonly string UMAbilityDescription = "UMAbility.Description";
 
         private static readonly ModLogger Logger = Logging.GetLogger(FeatName);
         public static void Configure()
         {
             Logger.Log($"Configuring {FeatName}");
-            var ability =
-                AbilityConfigurator.New(AbilityName, Guids.UltimateMercyAbility)
-                .SetDisplayName(UltimateFeatDisplayName)
-                .SetDescription(UltimateFeatDescription)
+            var UltimateMercyAbility =
+                AbilityConfigurator.New(UMAbilityName, Guids.UMAbility)
+                .SetDisplayName(UMAbilityName)
+                .SetDescription(UMAbilityDescription)
+                .SetIcon("assets/icons/ultimatemercyability.png")
                 .AddAbilityResourceLogic(isSpendResource: true, requiredResource: AbilityResourceRefs.LayOnHandsResource.ToString(), amount: 10)
-                .CopyFrom(AbilityRefs.RaiseDead)
+                .AddAbilityVariants(new()
+                {
+                    Guids.UMMaterialAbility,
+                    Guids.UMNegLvlAbility
+                })
                 .Configure();
 
             FeatureConfigurator.New(FeatName, Guids.GreaterMercyFeat, FeatureGroup.Feat)
              .SetDisplayName(FeatDisplayName)
              .SetDescription(FeatDescription)
+             .SetIcon("assets/icons/greatermercy.png")
              .AddPrerequisiteStatValue(Kingmaker.EntitySystem.Stats.StatType.Charisma, 13)
              .AddPrerequisiteFeature(FeatureRefs.LayOnHandsFeature.ToString())
              .AddPrerequisiteFeature(FeatureSelectionRefs.SelectionMercy.ToString())
@@ -63,11 +66,12 @@ namespace BookoftheDamned.Feats
             FeatureConfigurator.New(UltimateFeatName, Guids.UltimateMercyFeat, FeatureGroup.Feat)
                .SetDisplayName(UltimateFeatDisplayName)
                .SetDescription(UltimateFeatDescription)
+               .SetIcon("assets/icons/ultimatemercy.png")
                .AddPrerequisiteStatValue(Kingmaker.EntitySystem.Stats.StatType.Charisma, 19)
                .AddPrerequisiteFeature(FeatureRefs.LayOnHandsFeature.ToString())
                .AddPrerequisiteFeature(FeatureSelectionRefs.SelectionMercy.ToString())
                .AddPrerequisiteFeature(FeatName)
-               .AddFacts(new() { ability })
+               .AddFacts(new() { UltimateMercyAbility })
                .Configure(delayed: true);
         }
 

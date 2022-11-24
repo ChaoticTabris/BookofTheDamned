@@ -1,8 +1,8 @@
 [
-{
-  "Key": "GreaterMercy.Name",
-  "enGB": "Greater Mercy"
-},
+  {
+    "Key": "GreaterMercy.Name",
+    "enGB": "Greater Mercy"
+  },
 
   {
     "Key": "GreaterMercy.Description",
@@ -17,5 +17,35 @@
   {
     "Key": "UltimateMercy.Description",
     "enGB": "You can expend 10 uses of lay on hands to bring a single dead creature you touch back to life as a raise dead spell with a caster level equal to your paladin level. You must provide the material component for raise dead or choose to accept 1 temporary negative level; this level automatically goes away after 24 hours, never becomes a permanent negative level, and cannot be overcome in any way except by waiting for the duration to expire."
+  },
+
+  {
+    "Key": "UMAbility.Name",
+    "enGB": "Ultimate Mercy"
+  },
+
+  {
+    "Key": "UMAbility.Description",
+    "enGB": "You can expend 10 uses of lay on hands to bring a single dead creature you touch back to life as a raise dead spell with a caster level equal to your paladin level. You must provide the material component for raise dead or choose to accept 1 temporary negative level; this level automatically goes away after 24 hours, never becomes a permanent negative level, and cannot be overcome in any way except by waiting for the duration to expire."
+  },
+
+  {
+    "Key": "UMMaterial.Name",
+    "enGB": "Ultimate Mercy (Using Component)"
+  },
+
+  {
+    "Key": "UMMaterial.Description",
+    "enGB": "You can expend 10 uses of lay on hand to bring a single dead creature you touch back to life as a raise dead spell with a caster level equal to your paladin level. You must provide the material component for raise dead."
+  },
+
+  {
+    "Key": "UMNegLvl.Name",
+    "enGB": "Ultimate Mercy (Take Negative Level)"
+  },
+
+  {
+    "Key": "UMNegLvl.Description",
+    "enGB": "You can expend 10 uses of lay on hand to bring a single dead creature you touch back to life as a raise dead spell with a caster level equal to your paladin level. You eschew the material component and instead accept 1 temporary negative level; this level automatically goes away after 24 hours, never becomes a permanent negative level, and cannot be overcome in any way except by waiting for the duration to expire."
   }
 ]
