@@ -69,7 +69,7 @@ namespace BookoftheDamned.Feats.UltimateMercyUses
                 .AddAbilityEffectRunAction(ActionsBuilder.New()
                 .ApplyBuffWithDurationSeconds(BuffRefs.TemporaryNegativeLevel.ToString(), durationSeconds: 86400, isNotDispelable: true, toCaster: true)
                 .Conditional(ConditionsBuilder.New().DifficultyHigherThan(difficulty: CheckPreset, negate: false, reverse: false),
-                ifTrue: ActionsBuilder.New().DealDamagePermanentNegativeLevels(value: new() { DiceType = DiceType.Zero, DiceCountValue = 0, BonusValue = 2})//.DrainEnergy(damageBonus: 2, type: EnergyDrainType.Permanent)
+                ifTrue: ActionsBuilder.New().DealDamagePermanentNegativeLevels(value: new() { DiceType = DiceType.Zero, DiceCountValue = 0, BonusValue = 2})
                 .Build())
                 .Resurrect()
                 .Build())
