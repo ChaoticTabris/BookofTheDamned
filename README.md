@@ -4,6 +4,9 @@ Adds new features for Characters taken from both official Paizo content and Thir
 
 ### Content
 
+* Archetype
+     * [Urban Barbarian](https://www.d20pfsrd.com/classes/core-classes/barbarian/archetypes/paizo-barbarian-archetypes/urban-barbarian/)
+
 * Backgrounds
      * [Anatomist](https://www.d20pfsrd.com/traits/combat-traits/anatomist/) - Buffed from the original trait to the power level of vanilla backgrounds
 
