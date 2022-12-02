@@ -27,7 +27,15 @@ namespace BookoftheDamned.Util
                     ResourcesLibrary.TryGetResource<Sprite>)("assets/illustrations/botdlogo.png", height: 200, imageScale: 0.75f)*/
                 .AddDefaultButton(OnDefaultsApplied);
 
-            settings.AddSubHeader(GetString("Backgrounds.Title"));
+            settings.AddSubHeader(GetString("Archetypes.Title"));
+            foreach (var (guid, name) in Guids.Archetypes)
+            {
+                settings.AddToggle(
+                    Toggle.New(GetKey(guid), defaultValue: true, GetString(name, usePrefix: false))
+                        .WithLongDescription(GetString("EnableFeature")));
+            }
+
+                settings.AddSubHeader(GetString("Backgrounds.Title"));
             foreach (var (guid, name) in Guids.Backgrounds)
             {
                 settings.AddToggle(

@@ -1,12 +1,14 @@
-
 using BlueprintCore.Blueprints.Configurators.Root;
 using BlueprintCore.Utils;
+using BookoftheDamned.Archetypes;
+using BookoftheDamned.Archetypes.UrbanBarbarianRage;
 using BookoftheDamned.Backgrounds;
 using BookoftheDamned.Feats;
 using BookoftheDamned.Feats.UltimateMercyUses;
 using BookoftheDamned.Util;
 using HarmonyLib;
 using Kingmaker.PubSubSystem;
+using ModMenu.Settings;
 using System;
 using UnityModManagerNet;
 using static UnityModManagerNet.UnityModManager.ModEntry;
@@ -22,6 +24,7 @@ namespace BookoftheDamned
     {
       try
       {
+        //LogWrapper.EnableInternalVerboseLogs();
         var harmony = new Harmony(modEntry.Info.Id);
         harmony.PatchAll();
 
@@ -83,8 +86,9 @@ namespace BookoftheDamned
                     }
                     Initialized = true;
 
-                    // Fist strings
+                    // First strings
                     LocalizationTool.LoadEmbeddedLocalizationPacks(
+                        "BookoftheDamned.Strings.Archetypes.json",
                         "BookoftheDamned.Strings.Backgrounds.json",
                         "BookoftheDamned.Strings.Feats.json",
                         "BookoftheDamned.Strings.Settings.json");
@@ -92,6 +96,7 @@ namespace BookoftheDamned
                     // Then settings
                     Settings.Init();
 
+                    ConfigureArchetypes();
                     ConfigureBackgrounds();
                     ConfigureFeats();
                 }
@@ -99,6 +104,12 @@ namespace BookoftheDamned
                 {
                     Logger.LogException("Failed to initialize.", e);
                 }
+            }
+            private static void ConfigureArchetypes()
+            {
+                Logger.Log("Configuring archetypes.");
+                UrbanBarbarian.Configure();
+                ControlledRage.Configure();
             }
             private static void ConfigureBackgrounds()
             {
@@ -108,6 +119,7 @@ namespace BookoftheDamned
             private static void ConfigureFeats()
             {
                 Logger.Log("configuring feats.");
+                ExtraRageUrbanBarbarian.Configure();
                 GreaterMercy.Configure();
                 UMMaterial.Configure();
                 UMNegLvl.Configure();

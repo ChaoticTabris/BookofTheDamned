@@ -12,21 +12,8 @@ using Kingmaker.UnitLogic.Abilities.Components;
 using BlueprintCore.Conditions.Builder;
 using BlueprintCore.Conditions.Builder.MiscEx;
 using Kingmaker.Settings.Difficulty;
-using BlueprintCore.Actions.Builder.BasicEx;
-using Kingmaker.RuleSystem.Rules;
-using System;
-using Newtonsoft.Json;
-using Kingmaker.Settings;
-using Kingmaker.Designers.Mechanics.Facts;
-using Kingmaker.UnitLogic.Mechanics.Conditions;
-using TinyJson;
-using Kingmaker.Blueprints.JsonSystem;
-using Kingmaker.UnitLogic.Mechanics;
 using Kingmaker.RuleSystem;
-using BlueprintCore.Utils.Types;
-using Kingmaker.UnitLogic.Mechanics.Actions;
-using System.Net.NetworkInformation;
-using Kingmaker.RuleSystem.Rules.Damage;
+using System;
 
 namespace BookoftheDamned.Feats.UltimateMercyUses
 {
@@ -38,15 +25,29 @@ namespace BookoftheDamned.Feats.UltimateMercyUses
 
         private static readonly ModLogger Logger = Logging.GetLogger(FeatName);
 
-        //private DifficultyPresetAsset Core;
-        //private DifficultyPreset DeathDoor;
+        internal static void Configure()
+        {
+            {
+                try
+                {
+                    if (Settings.IsEnabled(Guids.GreaterMercyFeat))
+                        ConfigureEnabled();
+                    else
+                        ConfigureDisabled();
+                }
+                catch (Exception e)
+                {
+                    Logger.LogException("GreaterMercy.Configure", e);
+                }
+            }
+        }
 
         public static void ConfigureDisabled()
         {
             AbilityConfigurator.New(FeatName, Guids.UMNegLvlAbility).Configure();
         }
 
-        public static void Configure()
+        public static void ConfigureEnabled()
         {
             Logger.Log($"Configuring {FeatName}");
             var CheckDeathDoor = new DifficultyPreset() { DeathDoor = true };
@@ -56,7 +57,6 @@ namespace BookoftheDamned.Feats.UltimateMercyUses
                 AbilityConfigurator.New(FeatName, Guids.UMNegLvlAbility)
                 .CopyFrom(AbilityRefs.RaiseDead,
                     typeof(SpellComponent),
-                    typeof(AbilityEffectRunAction),
                     typeof(AbilityTargetIsDeadCompanion),
                     typeof(AbilitySpawnFx),
                     typeof(AbilityTargetHasFact))

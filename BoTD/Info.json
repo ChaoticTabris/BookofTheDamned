@@ -6,6 +6,7 @@
   "ManagerVersion": "0.21.3",
   "AssemblyName": "BookoftheDamned.dll",
   "EntryMethod": "BookoftheDamned.Main.Load",
-  "Requirements": [ "ModMenu-1.3.0" ]
+  "Requirements": [ "ModMenu-1.3.0" ],
+  "LoadAfter": [ "MewsiferConsole.Mod", "TabletopTweaks-Core" ]
 }
 

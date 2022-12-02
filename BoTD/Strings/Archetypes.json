@@ -1,0 +1,139 @@
+[
+  {
+    "Key": "UrbanBarbarian.Name",
+    "ProcessTemplates": false,
+    "enGB": "Urban Barbarian"
+  },
+
+  {
+    "Key": "UrbanBarbarian.Description",
+    "enGB": "Every barbarian knows that city life can soften the spirit and the body, but some barbarians take on the trappings and ways of their adoptive homes and bend their savage powers to its challenges. While these urban barbarians’ rough edges are smoothed into civility, they can use their primal nature and upbringing to move with the ebb and flow of civilization’s natural rhythms."
+  },
+
+  {
+    "Key": "UrbanBarbarian.Proficiencies.Name",
+    "ProcessTemplates": false,
+    "enGB": "Urban Barbarian Proficiencies"
+  },
+
+  {
+    "Key": "UrbanBarbarian.Proficiencies.Description",
+    "enGB": "An urban barbarian is proficient with all simple and martial weapons, light armor, and shields (except tower shields)."
+  },
+
+  {
+    "Key": "UrbanBarbarian.CrowdControl.Name",
+    "ProcessTemplates": false,
+    "enGB": "Crowd Control"
+  },
+
+  {
+    "Key": "UrbanBarbarian.CrowdControl.Description",
+    "enGB": "At 1st level, an urban barbarian gains a +1 bonus on attack rolls, a +1 dodge bonus to AC and a bonus equal to 1/2 her barbarian level on Intimidate checks when adjacent to two or more enemies"
+  },
+
+  {
+    "Key": "UrbanBarbarian.ControlledRage.Name",
+    "ProcessTemplates": false,
+    "enGB": "Controlled Rage"
+  },
+
+  {
+    "Key": "UrbanBarbarian.ControlledRage.Description",
+    "enGB": "When an urban barbarian rages, instead of making a normal rage she applies a +4 morale bonus to her Strength, Dexterity, or Constitution. This bonus increases to +6 when she gains greater rage and +8 when she gains mighty rage. She may apply the full bonus to one ability score or may split the bonus between several scores in increments of +2. When using a controlled rage, an urban barbarian gains no bonus on Will saves, takes no penalties to AC, and can still use Intelligence-, Dexterity-, and Charisma-based skills."
+  },
+
+  {
+    "Key": "UrbanBarbarian.GreaterControlledRage.Name",
+    "ProcessTemplates": false,
+    "enGB": "Greater Controlled Rage"
+  },
+
+  {
+    "Key": "UrbanBarbarian.GreaterControlledRage.Description",
+    "enGB": "At 11th level, when an urban barbarian enters rage, the morale bonus to her Strenght, Dextery, or Constitution increases to a +6."
+  },
+
+  {
+    "Key": "UrbanBarbarian.MightyControlledRage.Name",
+    "ProcessTemplates": false,
+    "enGB": "Mighty Controlled Rage"
+  },
+
+  {
+    "Key": "UrbanBarbarian.MightyControlledRage.Description",
+    "enGB": "At 20th level, when a barbarian enters rage, the morale bonus to her Strenght, Dextery, or Constitution increases to a +8."
+  },
+
+  {
+    "Key": "UrbanBarbarian.ControlledRageStr8.Name",
+    "ProcessTemplates": false,
+    "enGB": "Controlled Rage (+8 Str)"
+  },
+
+  {
+    "Key": "UrbanBarbarian.ControlledRageDex8.Name",
+    "ProcessTemplates": false,
+    "enGB": "Controlled Rage (+8 Dex)"
+  },
+
+  {
+    "Key": "UrbanBarbarian.ControlledRageCon8.Name",
+    "ProcessTemplates": false,
+    "enGB": "Controlled Rage (+8 Con)"
+  },
+
+  {
+    "Key": "UrbanBarbarian.ControlledRageStr6.Name",
+    "ProcessTemplates": false,
+    "enGB": "Controlled Rage (+6 Str)"
+  },
+
+  {
+    "Key": "UrbanBarbarian.ControlledRageDex6.Name",
+    "ProcessTemplates": false,
+    "enGB": "Controlled Rage (+6 Dex)"
+  },
+
+  {
+    "Key": "UrbanBarbarian.ControlledRageCon6.Name",
+    "ProcessTemplates": false,
+    "enGB": "Controlled Rage (+6 Con)"
+  },
+
+  {
+    "Key": "UrbanBarbarian.ControlledRageStr4.Name",
+    "ProcessTemplates": false,
+    "enGB": "Controlled Rage (+4 Str)"
+  },
+
+  {
+    "Key": "UrbanBarbarian.ControlledRageDex4.Name",
+    "ProcessTemplates": false,
+    "enGB": "Controlled Rage (+4 Dex)"
+  },
+
+  {
+    "Key": "UrbanBarbarian.ControlledRageCon4.Name",
+    "ProcessTemplates": false,
+    "enGB": "Controlled Rage (+4 Con)"
+  },
+
+  {
+    "Key": "UrbanBarbarian.ControlledRageStr2.Name",
+    "ProcessTemplates": false,
+    "enGB": "Controlled Rage (+2 Str)"
+  },
+
+  {
+    "Key": "UrbanBarbarian.ControlledRageDex2.Name",
+    "ProcessTemplates": false,
+    "enGB": "Controlled Rage (+2 Dex)"
+  },
+
+  {
+    "Key": "UrbanBarbarian.ControlledRageCon2.Name",
+    "ProcessTemplates": false,
+    "enGB": "Controlled Rage (+2 Con)"
+  }
+]

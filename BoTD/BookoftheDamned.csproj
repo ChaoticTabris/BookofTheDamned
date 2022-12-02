@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <!--
@@ -22,12 +22,14 @@
   </ItemGroup>
 
   <ItemGroup>
+	<None Remove="Strings\Archetypes.json" />
 	<None Remove="Strings\Backgrounds.json" />
 	<None Remove="Strings\Feats.json" />
 	<None Remove="Strings\Settings.json" />
    </ItemGroup>
 
    <ItemGroup>
+	<EmbeddedResource Include="Strings\Archetypes.json" />
 	<EmbeddedResource Include="Strings\Backgrounds.json" />
 	<EmbeddedResource Include="Strings\Feats.json">
 		<CopyToOutputDirectory>Never</CopyToOutputDirectory>
@@ -41,7 +43,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="ILRepack.MSBuild.Task" Version="*" />
-    <PackageReference Include="WW-Blueprint-Core" Version="*" />
+    <PackageReference Include="WW-Blueprint-Core" Version="2.6.2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -75,7 +77,7 @@
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>$(WrathPath)\Wrath_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
-	  
+	    
 	<!-- ModMenu -->
     <Reference Include="ModMenu">
       <HintPath>$(WrathPath)\Mods\ModMenu\ModMenu.dll</HintPath>

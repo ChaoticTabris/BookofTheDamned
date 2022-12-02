@@ -6,6 +6,12 @@
   },
 
   {
+    "Key": "BOTD.Settings.Archetypes.Title",
+    "ProcessTemplates": false,
+    "enGB": "Archetypes"
+  },
+
+  {
     "Key": "BOTD.Settings.Backgrounds.Title",
     "ProcessTemplates": false,
     "enGB": "Backgrounds"

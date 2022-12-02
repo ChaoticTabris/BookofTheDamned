@@ -1,9 +1,7 @@
 ﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
-using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
 using BookoftheDamned.Util;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.EntitySystem.Stats;
-using Microsoft.Build.Utilities;
 using System;
 using static UnityModManagerNet.UnityModManager.ModEntry;
 

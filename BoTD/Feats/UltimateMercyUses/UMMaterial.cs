@@ -5,6 +5,7 @@ using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.UnitLogic.Abilities.Components;
 using Kingmaker.UnitLogic.Abilities.Components.Base;
 using Kingmaker.UnitLogic.Abilities.Components.TargetCheckers;
+using System;
 using static UnityModManagerNet.UnityModManager.ModEntry;
 
 namespace BookoftheDamned.Feats.UltimateMercyUses
@@ -16,12 +17,29 @@ namespace BookoftheDamned.Feats.UltimateMercyUses
         private static readonly string Description = "UMMaterial.Description";
 
         private static readonly ModLogger Logger = Logging.GetLogger(FeatName);
+
+        internal static void Configure()
+        {
+            {
+                try
+                {
+                    if (Settings.IsEnabled(Guids.GreaterMercyFeat))
+                        ConfigureEnabled();
+                    else
+                        ConfigureDisabled();
+                }
+                catch (Exception e)
+                {
+                    Logger.LogException("GreaterMercy.Configure", e);
+                }
+            }
+        }
         public static void ConfigureDisabled()
         {
             AbilityConfigurator.New(FeatName, Guids.UMMaterialAbility).Configure();
         }
 
-        public static void Configure()
+        public static void ConfigureEnabled()
         {
             var ummaterialability =
                 AbilityConfigurator.New(FeatName, Guids.UMMaterialAbility)

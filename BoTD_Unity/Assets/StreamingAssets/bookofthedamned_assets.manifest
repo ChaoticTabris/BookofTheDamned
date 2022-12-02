@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3763539238
+CRC: 2193164124
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: e82af84fe3fa39fff4e1be3d6a9073c8
+    Hash: be09ab9d52cfc47595b18e12b1fb4b69
   TypeTreeHash:
     serializedVersion: 2
     Hash: 4df8c69f2c8a6ad9e3cbf82bb83e4dc3
@@ -15,7 +15,23 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
+- Assets/Icons/ControlledRageDex2.png
+- Assets/Icons/ControlledRageStr8.png
+- Assets/Icons/GreaterControlledRage.png
 - Assets/Icons/GreaterMercy.png
 - Assets/Icons/UltimateMercyAbility.png
+- Assets/Icons/ControlledRageDex6.png
+- Assets/Icons/ControlledRageStr2.png
+- Assets/Icons/CrowdControl.png
+- Assets/Icons/ControlledRageDex8.png
+- Assets/Icons/ControlledRageDex4.png
+- Assets/Icons/ControlledRage.png
 - Assets/Icons/UltimateMercy.png
+- Assets/Icons/ControlledRageStr6.png
+- Assets/Icons/ControlledRageCon6.png
+- Assets/Icons/ControlledRageStr4.png
+- Assets/Icons/ControlledRageCon8.png
+- Assets/Icons/ControlledRageCon2.png
+- Assets/Icons/ControlledRageCon4.png
+- Assets/Icons/MightyControlledRage.png
 Dependencies: []
